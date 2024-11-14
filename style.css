@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body,
+html {
+    background-color: black;
+    --fonte-principal: Tahoma, Helvetica, Arial, sans-serif;
+    --cor-verde: #1eff00;
+    margin: 0;
+}
+
+.cabecalho {
+    padding: 14px 4%;
+}
+
+.style-header-a {
+    color: rgb(180, 180, 180);
+    font-size: 20px;
+    text-decoration: none;
+    font-family: var(--fonte-principal);
+}
+
+.style-header-a:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.ul-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo-img {
+    width: 10%;
+}
+
+.btn-contato {
+    padding: 10px 40px;
+    background: var(--cor-verde);
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    border-radius: 30px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.btn-contato:hover {
+    box-shadow: 0px 0px 12px #00ff00;
+    transform: scale(1.05);
+    border: none;
+
+}
+
+.topo-do-site {
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+
+}
+
+.img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
+
+
+.flex {
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+}
+
+
+.txt-topo-site h1 {
+    font-family: var(--fonte-principal);
+    text-transform: uppercase;
+    color: white;
+    font-size: 54px;
+    font-weight: 700;
+    padding: 20px;
+}
+
+.txt-topo-site p {
+    color: white;
+    font-family: var(--fonte-principal);
+
+    font-size: 24px;
+    min-width: 300px;
+    max-width: 600px;
+    margin: 0 20px;
+
+}
+
+.txt-topo-site span {
+    color: var(--cor-verde);
+}
+
+
+.img-topo-site {
+    overflow: hidden;
+    flex: 1;
+    min-width: 300px;
+    max-width: 200px;
+    margin: 0 20px;
+}
+
+section.especialidade-menu {
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.menu-esp {
+    font-family: var(--fonte-principal);
+    text-transform: uppercase;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.menu-esp span {
+    color: var(--cor-verde);
+}
+
+
+
+.quemsou {
+    display: flex;
+    justify-content: center;
+
+}
+
+.quemsou-titulo {
+    display: flex;
+    padding: 100px 3%;
+    color: white;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: var(--fonte-principal);
+}
+
+.skills {
+    justify-content: center;
+    padding: 50px;
+}
+
+.skills img {
+    width: 18%;
+}
+
+.img-skill {
+
+    background-color: #00ff00;
+    border: 1px solid white;
+    padding: 50px 60px;
+    border-radius: 10px;
+}
+
+.img-skill:hover {
+
+    background-color: #0b1100;
+
+
+}
+
+.quemsou-titulo span {
+    color: var(--cor-verde);
+}
+
+.img-sobre {
+    padding: 10px 50px;
+}
+
+.vetor {
+    width: 50px;
+}
+
+.btn-vetor {
+    width: 10%;
+}
+
+.tituloporti {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-family: var(--fonte-principal);
+}
+
+.portifolio {
+    padding: 80px 4%;
+
+    box-shadow: 0 0 100px 5px #8f8f8f54;
+}
+
+.slides {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-portifolio {
+    width: 90%;
+}
+
+.img-renan {
+    width: 110%;
+}
+
+@media (max-width: 768px) {
+
+
+    .cabecalho {
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .especialidade-menu {
+        display: flex;
+        justify-content: center;
+    }
+
+    .ul-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .img-sobre img {
+        width: 100%;
+    }
+
+
+    .skills {
+        justify-content: center;
+        padding: 50px;
+    }
+
+    .skills img {
+        width: 40%;
+    }
+
+    .img-topo-site {
+        margin: 10px;
+        padding: 0px 30px;
+
+    }
+
+    .txt-topo-site h1 {
+        font-size: 28px;
+
+    }
+
+    .txt-topo-site button {
+
+        margin: 0 30px;
+        width: 80%;
+
+    }
+
+    .txt-topo-site p {
+        font-size: 25px;
+
+    }
+
+    .btn-contato {
+        padding: 6px 20px;
+
+    }
+
+    .logo-img {
+        width: 30%;
+
+    }
+
+    .slides {
+        flex-direction: column;
+
+    }
+}
